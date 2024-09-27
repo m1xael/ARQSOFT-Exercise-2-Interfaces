@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>210</x><y>110</y><w>200</w><h>240</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Zoo::Dog
+{A loyal companion}
+--
+-name: String
+-age: int
+--
++Dog(name: String, age: int)
++bark(): void
++getName(): String
++setName(name: String): void
++getAge(): int
++setAge(age: int): void
+--
+Woof Woof!
+-- Barks at strangers
+*-- Loves belly rubs*</panel_attributes><additional_attributes></additional_attributes></element></diagram>
