@@ -9,7 +9,18 @@ public class App {
         persons[4] = new Person("Peter", "Griffin");
 
         for (int i = 0; i <= 4; i++) {
-            System.out.println(persons[i].getName() + " " + persons[i].getSurname());
+            System.out.println(persons[i].getSurname() + " " + persons[i].getName());
         }
+
+        System.out.println("");
+        Person[] sortedPersons = Sorter.sorter(persons);
+
+        for (int i = 0; i <= 4; i++) {
+            System.out.println(sortedPersons[i].getSurname() + " " + sortedPersons[i].getName());
+        }
+
+        System.out.println("");
+        Rectangle rectangle = new Rectangle(20, 14.5);
+        System.out.println(rectangle.calculateArea());
     }
 }
