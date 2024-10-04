@@ -1,4 +1,4 @@
-public class Rectangle {
+class Rectangle implements Comparable<Rectangle> {
     double height;
     double width;
 
@@ -26,5 +26,10 @@ public class Rectangle {
     public double calculateArea() {
         double area = height * width;
         return area;
+    }
+
+    @Override
+    public int compareTo(Rectangle other) {
+        return Double.compare(this.calculateArea(), other.calculateArea());
     }
 }
